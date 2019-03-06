@@ -1,0 +1,22 @@
+<div class="container" style="margin-top:20px">
+    <div class="row">
+      <div class="table-responsive">
+        <table class="table">
+          <thead>
+            <tr class="table-primary">
+              <th>Nombre</th>
+              <th>Descripción</th>
+              <th>Opciones</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr *ngFor="let Heroe of Heroes">
+              <td>{{ Heroe.nombre }}</td>
+              <td>{{ Heroe.descripcion }}</td>
+              <td><a href="javascript:void(0)" class="btn btn-outline-primary" (click)="Editar(Heroe)">Editar</a></td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+</div>
